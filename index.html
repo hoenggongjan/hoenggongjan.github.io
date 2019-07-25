@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timeline</title>
+        <meta           charset="UTF-8" />
+        <link           rel="stylesheet"        href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css" /> 
+        <link           rel="stylesheet"        href="style-albe-timeline.css" />
 
+        <script         src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"   ></script>
+        <script         src="jquery-albe-timeline.min.js "                                       ></script>
+        <script         src="data-albe-timeline.js"                                              ></script>
+    </head>
+    <body>
+        <h1>Timeline</h1>
+        <!-- Timeline Block 1-->
+        <div id="mTimeline"></div>
+        <script>
+            $("#mTimeline").albeTimeline(data, {
+                language        : "en-US",
+                formatDate      : 'yyyy-MM-dd (DD) HH:mm:ss',
+                showMenu        : true,
+                showGroup       : true,
+            });
+        </script>
+
+        <!-- Timeline Block 2-->
+        <!--<div id="mTimeline2"></div>
+        <script>
+            $("#mTimeline2").albeTimeline(data, {
+                language        : "de-DE",
+                formatDate      : 'YYYY MM dd HH:mm:ss',
+                showMenu        : true,
+            });
+        </script>
+        -->
+    </body>
