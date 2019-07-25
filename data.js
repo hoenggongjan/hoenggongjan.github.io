@@ -1,4 +1,3 @@
-//Json Object
 var data = [
 	{
 		time:"2015-03-29 23:59:59",
